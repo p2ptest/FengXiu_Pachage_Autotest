@@ -18,6 +18,9 @@ def test_net(netdir):
             print("%s is not directory" % netdir)
             print(global_var.usage)
             sys.exit()
+    else:
+        print("%s is not a direstory!" % netdir)
+        sys.exit()
 
 
 #判断本地目录是否存在，存在则copy文件，不存在则创建后copy文件
